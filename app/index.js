@@ -7,4 +7,4 @@ app.use(bp.json());
 app.use(bp.urlencoded({ extended: true }));
 require("./controllers")(app);
 
-app.listen(3000, () => console.log("ouvindo na porta 3000"));
+app.listen(process.env.PORT || 3000);
